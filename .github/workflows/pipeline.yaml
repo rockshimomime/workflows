@@ -1,0 +1,11 @@
+name: Lint, Test and Build
+
+on: workflow_dispatch
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say Hello
+        run: echo "Hello, World!"
+      - name: Cat File
+        run: echo ${GITHUB_EVENT_PATH}
